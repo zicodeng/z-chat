@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-CHAT | Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <h1 class="chat-name">Z-CHAT</h1>      
+                <div class="row">
+                    <div class="col col-sm-6">
+
+                        <!--Sign up-->
+                        <form id="signup-form">
+                            <legend>SIGN UP</legend>
+
+                            <ul class="list-unstyled">
+
+                                <!--Signup name-->
+                                <li class="form-group">
+                                    <label for="signup-name" class="control-label">Display Name:</label>
+                                    <input type="text" id="signup-name" class="form-control" placeholder="First Name + Last Name" />
+                                </li>
+
+                                <!--Signup email-->
+                                <li class="form-group">
+                                    <label for="signup-email" class="control-label">Email:</label>
+                                    <input type="email" id="signup-email" class="form-control" placeholder="example@domain.com" required />
+                                </li>
+
+                                <!--Signup password-->
+                                <li class="form-group">
+                                    <label for="signup-password" class="control-label">Password:</label>
+                                    <input type="password" id="signup-password" class="form-control" placeholder="Enter Your Password" />
+                                </li>
+
+                                <!--Signup password confirm-->
+                                <li class="form-group">
+                                    <label for="signup-password-confirm" class="control-label">Password(confirm):</label>
+                                    <input type="password" id="signup-password-confirm" class="form-control" placeholder="Enter Your Password Again" />
+                                </li>
+                                
+                                <!--Signup submit-->
+                                <li class="form-group"> 
+                                    <button id="signup-button" type="submit" class="btn btn-primary">Sign up</button>
+                                </li>
+                            </ul>
+                        </form>
+
+                        <!--Signup error alert-->
+                        <div id="signup-error" class="alert alert-danger" role="alert"></div>
+                    </div>   
+                    <div class="col col-sm-6">
+                        
+                        <!--Log in-->
+                        <form id="login-form">
+                            <legend>LOG IN</legend>
+                            <ul class="list-unstyled">
+
+                                <!--Login email-->
+                                <li class="form-group">
+                                    <label for="login-email" class="control-label">Email:</label>
+                                    <input type="email" id="login-email" class="form-control" placeholder="example@domain.com" />
+                                </li>
+
+                                <!--Login password-->
+                                <li class="form-group">
+                                    <label for="login-password" class="control-label">Password:</label>
+                                    <input type="password" id="login-password" class="form-control" placeholder="Enter Your Password" />
+                                </li>
+
+                                <!--Login submit-->
+                                <li class="form-group"> 
+                                    <button id="login-button" type="submit" class="btn btn-primary">Login</button>
+                                </li>
+                            </ul>
+                        </form>
+
+                        <!--Login error alert-->
+                        <div id="login-error" class="alert alert-danger" role="alert"></div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </main>
+
+    <!--Javascript links-->
+    <script src="https://unpkg.com/blueimp-md5@2.4.0/js/md5.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>
