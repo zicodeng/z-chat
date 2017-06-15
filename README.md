@@ -1,3 +1,2 @@
-# Firebase Challenge
-
-Use this directory for the [Firebase challenge](https://canvas.uw.edu/courses/1066610/assignments/3383825).
+# Z-Chat
+An online chat app that allows users to chat in one common channel. Uses can also edit or delete their own messages
